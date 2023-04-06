@@ -26,7 +26,7 @@ app.get('/notes', (req, res) =>
 );
 
 
-//Routing
+
 app.get('/api/notes', (req, res) => {
     fetchNotes().then(notes => res.json(notes))
     .catch(err => res.status(500).json(err))
